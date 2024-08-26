@@ -44,7 +44,7 @@ from pysteps.nowcasts import (
 
 from pysteps.nowcasts import lagrangian_probability
 import os
-import pkg.resources
+import pkg_resources
 
 
 

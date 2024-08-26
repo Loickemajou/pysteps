@@ -1,11 +1,7 @@
 """Implementations of deterministic and ensemble nowcasting methods."""
 
-from pysteps.nowcasts.interface import *
+from pysteps.nowcasts.interface import discover_nowcasts,get_method,nowcasts_info
 
-try:
-    from dgmr_module_plugin import dgmr
-except ImportError:
-    dgmr=None
 
 
     

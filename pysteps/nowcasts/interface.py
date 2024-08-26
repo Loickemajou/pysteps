@@ -44,6 +44,7 @@ from pysteps.nowcasts import (
 
 from pysteps.nowcasts import lagrangian_probability
 import os
+import pkg.resources
 
 
 
@@ -72,7 +73,7 @@ def discover_nowcasts():
     # The pkg resources needs to be reload to detect new packages installed during
     # the execution of the python application. For example, when the plugins are
     # installed during the tests
-    import pkg_resources
+
 
     importlib.reload(pkg_resources)
 

@@ -80,7 +80,7 @@ def discover_nowcasts():
     for entry_point in pkg_resources.iter_entry_points(
         group="pysteps.plugins.nowcasts", name=None
     ):
-        print("Discovered entry points:", entry_points)
+        print("Discovered entry points:", entry_point)
         _nowcast_module_name=entry_point.name
     
         if _nowcast_module_name not in _nowcast_methods:

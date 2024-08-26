@@ -77,7 +77,7 @@ def discover_nowcasts():
     importlib.reload(pkg_resources)
 
     for entry_point in pkg_resources.iter_entry_points(
-        group="pysteps.plugin.nowcasts", name=None
+        group="pysteps.plugins.nowcasts", name=None
     ):
         _nowcast_module_name=entry_point.name
     
